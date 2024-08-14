@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    40deg,
+    rgba(0, 0, 255, 0.557),
+    rgba(255, 0, 0, 0.507)
+  );
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.colorcontainer {
+  background-color: rgb(6, 0, 65);
+  padding: 60px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 4px 5px 8px rgba(255, 217, 0, 0.304);
+  width: 550px;
+}
+li {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: rgb(0, 0, 119);
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+ul {
+  background-color: rgb(6, 0, 65);
+
+  height: 200px;
+  padding: 10px 0;
+  overflow: auto;
+}
+.first {
+  text-align: center;
+  color: white;
+}
+.inbtn {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-basis: 200;
+  align-items: center;
+  background-color: white;
+  padding: 15px 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-bottom: 2px solid black;
+}
+.addbtn {
+  padding: 10px 30px;
+  font-size: 15px;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 20px;
+}
+.deletebtn {
+  background-color: lightseagreen;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* media query part */
+
+@media (max-width: 550px) {
+  .colorcontainer {
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (max-width: 433px) {
+  .addbtn,
+  .deletebtn {
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+  ul {
+    background-color: rgb(6, 0, 65);
+
+    height: 70vh;
+    padding: 10px 0;
+    overflow: auto;
+  }
+  .addbtn {
+    width: 100vw;
+  }
+  input {
+    width: 100vw;
+  }
+}
